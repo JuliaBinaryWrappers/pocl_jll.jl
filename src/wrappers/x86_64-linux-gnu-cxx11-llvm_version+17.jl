@@ -23,4 +23,9 @@ function __init__()
     )
 
     JLLWrappers.@generate_init_footer()
+        # Register this driver with OpenCL_jll
+    if OpenCL_jll.is_available()
+        push!(OpenCL_jll.drivers, libpocl)
+    end
+
 end  # __init__()
