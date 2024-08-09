@@ -1,6 +1,6 @@
 name = "pocl_jll"
 uuid = "627d6b7a-bbe6-5189-83e7-98cc0a5aeadd"
-version = "6.0.0+1"
+version = "6.0.0+2"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
