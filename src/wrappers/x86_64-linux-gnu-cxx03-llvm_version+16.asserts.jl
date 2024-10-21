@@ -107,8 +107,12 @@ function __init__()
         else
             error("Unsupported platform")
         end
-    ENV["POCL_PATH_LD"] =
-        generate_wrapper_script("lld", ld_path,
-                                LLD_unified_jll.LIBPATH[], LLD_unified_jll.PATH[])
+    ld_wrapper = generate_wrapper_script("lld", ld_path,
+                                         LLD_unified_jll.LIBPATH[],
+                                         LLD_unified_jll.PATH[])
+    ENV["POCL_ARGS_CLANG"] = join([
+            "-fuse-ld=lld", "--ld-path=$ld_wrapper",
+            "-L" * joinpath(artifact_dir, "share", "lib")
+        ], ";")
 
 end  # __init__()
