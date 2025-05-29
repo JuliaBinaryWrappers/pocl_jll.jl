@@ -106,9 +106,9 @@ ENV["POCL_PATH_CLANG"] =
                             Clang_unified_jll.LIBPATH[], Clang_unified_jll.PATH[])
 ENV["POCL_PATH_LLVM_SPIRV"] =
     generate_wrapper_script("llvm-spirv",
-                            SPIRV_LLVM_Translator_unified_jll.llvm_spirv_path,
-                            SPIRV_LLVM_Translator_unified_jll.LIBPATH[],
-                            SPIRV_LLVM_Translator_unified_jll.PATH[])
+                            SPIRV_LLVM_Translator_jll.llvm_spirv_path,
+                            SPIRV_LLVM_Translator_jll.LIBPATH[],
+                            SPIRV_LLVM_Translator_jll.PATH[])
 ld_path = if Sys.islinux()
         LLD_unified_jll.ld_lld_path
     elseif Sys.isapple()
