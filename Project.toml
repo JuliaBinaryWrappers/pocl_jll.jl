@@ -1,6 +1,6 @@
 name = "pocl_jll"
 uuid = "627d6b7a-bbe6-5189-83e7-98cc0a5aeadd"
-version = "7.0.0+8"
+version = "7.0.0+9"
 
 [deps]
 SPIRV_Tools_jll = "6ac6d60f-d740-5983-97d7-a4482c0689f4"
