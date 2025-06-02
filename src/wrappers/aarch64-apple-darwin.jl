@@ -60,7 +60,7 @@ function generate_wrapper_script(name, path, LIBPATH, PATH)
 
     # write to temporary script
     temp_script, io = mktemp(bindir; cleanup=false)
-    if Sys.isunix()
+    script = if Sys.isunix()
         println(io, "#!/bin/bash")
 
         LIBPATH_base = get(ENV, LIBPATH_env, expanduser(LIBPATH_default))
@@ -84,12 +84,27 @@ function generate_wrapper_script(name, path, LIBPATH, PATH)
         println(io, "exec \"$path\" \"\$@\"")
         close(io)
         chmod(temp_script, 0o755)
+        joinpath(bindir, name)
+    elseif Sys.iswindows()
+        println(io, "@echo off")
+
+        LIBPATH_base = get(ENV, LIBPATH_env, expanduser(LIBPATH_default))
+        LIBPATH_value = if !isempty(LIBPATH_base)
+            string(LIBPATH, pathsep, LIBPATH_base)
+        else
+            LIBPATH
+        end
+        println(io, "set \"$LIBPATH_env=$LIBPATH_value\"")
+
+        println(io, "call \"$path\" %*")
+
+        joinpath(bindir, name * ".bat")
     else
         error("Unsupported platform")
     end
+    close(io)
 
     # atomically move to the final location
-    script = joinpath(bindir, name)
     @static if VERSION >= v"1.12.0-DEV.1023"
         mv(temp_script, script; force=true)
     else
@@ -114,7 +129,8 @@ ld_path = if Sys.islinux()
     elseif Sys.isapple()
         LLD_unified_jll.ld64_lld_path
     elseif Sys.iswindows()
-        LLD_unified_jll.lld_link_path
+        # PoCL doesn't use MSVC-style linker arguments, so still use the GNU ld wrapper.
+        LLD_unified_jll.ld_lld_path
     else
         error("Unsupported platform")
     end
@@ -134,6 +150,10 @@ for lib in Libdl.dllist()
         # can't safely check first, because multiple processes may be running
         islink(link) || rethrow()
     end
+end
+if Sys.iswindows()
+    # BUG: using native (backwards) slashes breaks Clang's --ld-path
+    ld_wrapper = replace(ld_wrapper, '\\' => '/')
 end
 ENV["POCL_ARGS_CLANG"] = join([
         "-fuse-ld=lld", "--ld-path=$ld_wrapper",
