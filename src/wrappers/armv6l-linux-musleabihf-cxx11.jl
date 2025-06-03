@@ -9,11 +9,12 @@ using SPIRV_LLVM_Translator_jll
 using SPIRV_Tools_jll
 using Clang_unified_jll
 using LLD_unified_jll
+using SLEEF_jll
 JLLWrappers.@generate_wrapper_header("pocl")
 JLLWrappers.@declare_library_product(libpocl, "libpocl.so.2")
 JLLWrappers.@declare_executable_product(poclcc)
 function __init__()
-    JLLWrappers.@generate_init_header(OpenCL_jll, OpenCL_Headers_jll, Hwloc_jll, Zstd_jll, SPIRV_LLVM_Translator_jll, SPIRV_Tools_jll, Clang_unified_jll, LLD_unified_jll)
+    JLLWrappers.@generate_init_header(OpenCL_jll, OpenCL_Headers_jll, Hwloc_jll, Zstd_jll, SPIRV_LLVM_Translator_jll, SPIRV_Tools_jll, Clang_unified_jll, LLD_unified_jll, SLEEF_jll)
     JLLWrappers.@init_library_product(
         libpocl,
         "lib/libpocl.so",
