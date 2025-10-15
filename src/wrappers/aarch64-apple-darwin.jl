@@ -16,7 +16,7 @@ function __init__()
     JLLWrappers.@generate_init_header(OpenCL_jll, OpenCL_Headers_jll, Hwloc_jll, Zstd_jll, SPIRV_LLVM_Translator_jll, SPIRV_Tools_jll, Clang_unified_jll, LLD_unified_jll)
     JLLWrappers.@init_library_product(
         libpocl,
-        "lib/libpocl.2.14.0.dylib",
+        "lib/libpocl.2.15.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
