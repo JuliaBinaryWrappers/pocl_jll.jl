@@ -5,5 +5,5 @@ using Base: UUID
 import JLLWrappers
 
 JLLWrappers.@generate_main_file_header("pocl")
-JLLWrappers.@generate_main_file("pocl", UUID("627d6b7a-bbe6-5189-83e7-98cc0a5aeadd"))
+JLLWrappers.@generate_main_file("pocl", Base.UUID("627d6b7a-bbe6-5189-83e7-98cc0a5aeadd"))
 end  # module pocl_jll
