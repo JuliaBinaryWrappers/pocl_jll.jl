@@ -5,14 +5,13 @@ using OpenCL_jll
 using OpenCL_Headers_jll
 using Hwloc_jll
 using Zstd_jll
-using SPIRV_Tools_jll
 using Clang_unified_jll
 using LLD_unified_jll
 JLLWrappers.@generate_wrapper_header("pocl")
 JLLWrappers.@declare_library_product(libpocl, "pocl.dll")
 JLLWrappers.@declare_executable_product(poclcc)
 function __init__()
-    JLLWrappers.@generate_init_header(OpenCL_jll, OpenCL_Headers_jll, Hwloc_jll, Zstd_jll, SPIRV_Tools_jll, Clang_unified_jll, LLD_unified_jll)
+    JLLWrappers.@generate_init_header(OpenCL_jll, OpenCL_Headers_jll, Hwloc_jll, Zstd_jll, Clang_unified_jll, LLD_unified_jll)
     JLLWrappers.@init_library_product(
         libpocl,
         "bin\\pocl.dll",
@@ -113,9 +112,8 @@ function generate_wrapper_script(name, path, LIBPATH, PATH)
 
     return script
 end
-ENV["POCL_PATH_SPIRV_LINK"] =
-    generate_wrapper_script("spirv_link", SPIRV_Tools_jll.spirv_link_path,
-                            SPIRV_Tools_jll.LIBPATH[], SPIRV_Tools_jll.PATH[])
+# NOTE: no spirv-link wrapper -- that tool (SPIRV_Tools_jll) is only used by the
+# Level Zero driver, which this CPU-only build does not enable (ENABLE_LEVEL0=OFF).
 ENV["POCL_PATH_CLANG"] =
     generate_wrapper_script("clang", Clang_unified_jll.clang_path,
                             Clang_unified_jll.LIBPATH[], Clang_unified_jll.PATH[])
