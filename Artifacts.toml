@@ -1,155 +1,155 @@
 [[pocl]]
 arch = "i686"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "d250c7070332e28bf2d19a598f960a7826239ccc"
+git-tree-sha1 = "32dda808286f6f11decac5a7829fcfaaef99a85e"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "5d8488e6616ba5a65806735c083cbaa77f2a9be3117526d5248e9bcd1518151d"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.i686-linux-gnu-cxx11.tar.gz"
+    sha256 = "9d8bbb7cdca9b34666e92d47d6f047756c0961cce3dcd78c8e19c515685ff6f1"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.i686-linux-gnu-cxx11.tar.gz"
 [[pocl]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "a02fa6ea87c199179b03bb8bd5d1a0dae25a61bb"
+git-tree-sha1 = "a5578dfb67551e55ddb00b0f2c1b7b939ab210b0"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "c08cc50bb7506a86b027317eb5e15b1427a05e60ff2ec902bac6976568ea2669"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.x86_64-linux-gnu-cxx11.tar.gz"
+    sha256 = "d389f646d6e53a7e97405d090f920d2b91641024a8bbc835571b1fca315deb59"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.x86_64-linux-gnu-cxx11.tar.gz"
 [[pocl]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "b406dea0d2b2aba7cf38612b50d87616829bbbc4"
+git-tree-sha1 = "e3049195684373cc9634ea8b1d5e40285395d75f"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "ff21fda5b29433748e5794c74a3d3fb9680193d1e2bdd9e3f5b4063cc6d9d839"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.aarch64-linux-gnu-cxx11.tar.gz"
+    sha256 = "63c400283303065934103600b35cc4016573d32bc0c7efbe4a1163ead3066b34"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.aarch64-linux-gnu-cxx11.tar.gz"
 [[pocl]]
 arch = "armv6l"
 call_abi = "eabihf"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "b413c8eca81d8f3c81309d8ae5b5dcfcc8156c60"
+git-tree-sha1 = "a3fa82f4637e575f70fcfb5fc583b7e2089a2027"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "c0f42e6b78228081a728b6532035ccc79b6b1d688662049f3fb7caf51aead1fc"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.armv6l-linux-gnueabihf-cxx11.tar.gz"
+    sha256 = "b5dfdc9b7d2e125764f835ce1a650c34dff0f015ad9cec109d0e66641b4c2843"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.armv6l-linux-gnueabihf-cxx11.tar.gz"
 [[pocl]]
 arch = "armv7l"
 call_abi = "eabihf"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "c8f03d65cd32236779eef30c0b4ca0781bf8db38"
+git-tree-sha1 = "ebfc273896317485c99415d59442ed70b4999144"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "bc6edb80424d280662f78f412098bbe8f717a3e6fd0750edb5229f8fc1897f10"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.armv7l-linux-gnueabihf-cxx11.tar.gz"
+    sha256 = "0364fa5c0286fed6222d688b9c18cf13d0755e13539f9bfc53995f97895f8131"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.armv7l-linux-gnueabihf-cxx11.tar.gz"
 [[pocl]]
 arch = "powerpc64le"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "775d42c9a6daa768f05f289d315a3e1b338e3aa5"
+git-tree-sha1 = "7b4569b12a109892f65ecfa5bd411ac13bd3022b"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "2501df2e0203d293e28d8fe652f3ab008a4f0636accbd888783da781b1ac8aee"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.powerpc64le-linux-gnu-cxx11.tar.gz"
+    sha256 = "b3cadd93342c5f55d73ac870c0ef420f264eee20c02f0396e5b3c6fbc58f0270"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.powerpc64le-linux-gnu-cxx11.tar.gz"
 [[pocl]]
 arch = "riscv64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "6641269177e06105b1720a455f5cb598a424ea90"
+git-tree-sha1 = "e310a49403cea09530c7319415d01887b7148ea0"
 libc = "glibc"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "487c0e62ca122c8872cac5beba7023ccac85843d556b5a5315e650ba7a5fc927"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.riscv64-linux-gnu-cxx11.tar.gz"
+    sha256 = "99af62f2ec13874a5d825bd044a4801cad11c2cd0c1a15b3ea62854f1d148caa"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.riscv64-linux-gnu-cxx11.tar.gz"
 [[pocl]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "33d3e51b7f516474f9abe9d6825c60f5056968d8"
+git-tree-sha1 = "121ce5a8d412f263244213cb075a73ed3d4b9e5e"
 libc = "musl"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "4669657fb3b533b43754a7143500a67bb056686c85937c6d19e400abad07a44f"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.x86_64-linux-musl-cxx11.tar.gz"
+    sha256 = "24ef99226a1309d064cba7a997d6b8008c74a0af2b1018d76142f8b7fc2e0547"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.x86_64-linux-musl-cxx11.tar.gz"
 [[pocl]]
 arch = "aarch64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "8c2b4538dba4b9ca60375e21953e2c1fe6bef633"
+git-tree-sha1 = "a44f9975f1578e1c06506beb392a49259fb79a00"
 libc = "musl"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "05b70d63a2edc9932168a6286d3d415f402a98650bb83e757283e75d874c57d9"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.aarch64-linux-musl-cxx11.tar.gz"
+    sha256 = "1a26ee2bf3f3f4bf36fdebc9f1ab7ed727f012055ebcec532813b93e199ad22c"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.aarch64-linux-musl-cxx11.tar.gz"
 [[pocl]]
 arch = "armv6l"
 call_abi = "eabihf"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "4b23135e4c71b5d09414ad8ad6eb59119fdf83c4"
+git-tree-sha1 = "799cb030821c4e45889a2e10b9a47f2b3ccabb5a"
 libc = "musl"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "12a75b0642d9683cd5f01c0894185f9d92b501c3e156660aa9d01c42c4261275"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.armv6l-linux-musleabihf-cxx11.tar.gz"
+    sha256 = "31a1614ac81df93a15c2756ce460ac04b29ffbc2c7c7b1e23471b7f616ac8ab0"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.armv6l-linux-musleabihf-cxx11.tar.gz"
 [[pocl]]
 arch = "armv7l"
 call_abi = "eabihf"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "9e9d5416bdfa898e6ac1f2ce26d744e213688a07"
+git-tree-sha1 = "044d679cb35bbba861bf8696aa1389c76576c9c9"
 libc = "musl"
 os = "linux"
 
     [[pocl.download]]
-    sha256 = "12152c57aafc7952f8891be6a5e7e9db99d2381ca2dfd4484ac08ae2774b4ba8"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.armv7l-linux-musleabihf-cxx11.tar.gz"
+    sha256 = "bb037ed4d0dffc63198fcf7008cc257179b23ebcb8fbd63f624779dc3957fb36"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.armv7l-linux-musleabihf-cxx11.tar.gz"
 [[pocl]]
 arch = "x86_64"
-git-tree-sha1 = "3dd88ced50203c1944e5dfab3f236bd25ac28b46"
+git-tree-sha1 = "7376aa5693e8d491ecd6537f4bd37773a9a60273"
 os = "macos"
 
     [[pocl.download]]
-    sha256 = "7cd2b182ec6c587edb0bf1e3b90ddf83faf3a6ab7cbb906f98db8f8b4d1950c8"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.x86_64-apple-darwin.tar.gz"
+    sha256 = "b913eac3cfcdd44039ec9d3f3c07c74e494e6f9839addfdaaa4347daa8c38513"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.x86_64-apple-darwin.tar.gz"
 [[pocl]]
 arch = "aarch64"
-git-tree-sha1 = "0eb6ad9d35b4273cbf2840b4dc71d9fbcba21fb1"
+git-tree-sha1 = "6bb9bc3310c0dcaec41b71f03a05f771ace40f2a"
 os = "macos"
 
     [[pocl.download]]
-    sha256 = "d2303ede7d237417bd5b03722aea6fdc4cf5ed3b86d4da549769bc8b7147852f"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.aarch64-apple-darwin.tar.gz"
+    sha256 = "7db61499441dff1e6359122c1a27c9123e01ef8d13cd36f05005d57d99af5989"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.aarch64-apple-darwin.tar.gz"
 [[pocl]]
 arch = "x86_64"
-git-tree-sha1 = "ab8b97e46582b78d06f974359525244f52f524e7"
+git-tree-sha1 = "ff68b5312264ea11e38721ac90ecdf07ae576914"
 os = "freebsd"
 
     [[pocl.download]]
-    sha256 = "632bd509c5caf067a49d12515fa45b5e36bcb0e00f03692b8e719381a3e5d655"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.x86_64-unknown-freebsd.tar.gz"
+    sha256 = "3b25fe4f739fd8a9d7980af47ec0f814ab998614d5eacb5fd5bf59fc3f9938e6"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.x86_64-unknown-freebsd.tar.gz"
 [[pocl]]
 arch = "aarch64"
-git-tree-sha1 = "8afedc13933a83e63907d4a9dc3355467595d8e2"
+git-tree-sha1 = "caf6dc76e231e35fca2e2436389cc05c7beee64a"
 os = "freebsd"
 
     [[pocl.download]]
-    sha256 = "6c09fe4648ee087fb51bab2c912ec388c8e38918cef4c947a2610cb8cd380557"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.aarch64-unknown-freebsd.tar.gz"
+    sha256 = "82ab2fefd43cd7088c5812d4377ab7df559fe761d31e4756f78d4c1871f05280"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.aarch64-unknown-freebsd.tar.gz"
 [[pocl]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "1f29b2ac73d506cd1cec9bfe9d446223d37c7f34"
+git-tree-sha1 = "5775f59a74d059c42dc787087661f436ed7dd454"
 os = "windows"
 
     [[pocl.download]]
-    sha256 = "b29ed7f4bc2c9850f8fcbb03443e4c7f916608dfafa5392fdb906478ef7844e6"
-    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+5/pocl.v7.1.3.x86_64-w64-mingw32-cxx11.tar.gz"
+    sha256 = "2965130bb7452b5528702c1bc2d67f2ee0738656bafab17ed3bdaa3614d076bd"
+    url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.1.3+6/pocl.v7.1.3.x86_64-w64-mingw32-cxx11.tar.gz"
