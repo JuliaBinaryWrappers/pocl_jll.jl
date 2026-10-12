@@ -147,9 +147,9 @@ os = "freebsd"
 [[pocl]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
-git-tree-sha1 = "382a710615a05af7f67b62553f9c4a08d2f22ac9"
+git-tree-sha1 = "57859b0362abc33287118f982214548053a8fc3d"
 os = "windows"
 
     [[pocl.download]]
-    sha256 = "780145aaa78b2d6b0954b8ecdd4232580031c0a2b40e27ed8cb17a7bf64b4f8e"
+    sha256 = "4fd17ce629953ba0984b86eb95027895fec485fe21aa6d1b30fd2b23a68018a5"
     url = "https://github.com/JuliaBinaryWrappers/pocl_jll.jl/releases/download/pocl-v7.2.2+5/pocl.v7.2.2.x86_64-w64-mingw32-cxx11.tar.gz"
